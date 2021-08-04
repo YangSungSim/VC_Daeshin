@@ -1,0 +1,793 @@
+﻿// Created by Microsoft (R) C/C++ Compiler Version 14.16.27045.0 (ac6289a5).
+//
+// c:\users\lgpc\visual_studio\vc_stock2\vc_stock\debug\cpsysdib.tlh
+//
+// C++ source equivalent of Win32 type library C:\DAISHIN\CYBOSPLUS\cpsysdib.dll
+// compiler-generated file created 08/03/21 at 16:43:21 - DO NOT EDIT!
+
+#pragma once
+#pragma pack(push, 8)
+
+#include <comdef.h>
+
+namespace CPSYSDIBLib {
+
+//
+// Forward references and typedefs
+//
+
+struct __declspec(uuid("9c31b76a-7189-49a3-9781-3c6dd6ed5ad3"))
+/* LIBID */ __CPSYSDIBLib;
+struct __declspec(uuid("8146ac72-e93b-42a8-86a3-b9851aa15229"))
+/* dual interface */ ISysDib;
+struct __declspec(uuid("60d7702a-57ba-4869-af3f-292fdc909d75"))
+/* dispinterface */ _ISysDibEvents;
+struct __declspec(uuid("c9fac560-be19-4fb2-801d-54f89d3fbc0a"))
+/* dual interface */ ICpField;
+struct __declspec(uuid("2a93e227-583d-427c-a430-2ab642c19e02"))
+/* dual interface */ ICpFields;
+struct /* coclass */ CpField;
+struct /* coclass */ CpFields;
+struct __declspec(uuid("4be681c3-67b8-4b6a-bc98-89ff0df4238e"))
+/* dual interface */ ICpSys;
+struct /* coclass */ CpSvrNew7224;
+struct /* coclass */ CpSvr3745;
+struct /* coclass */ CpSvr7043;
+struct /* coclass */ CpSvr8548;
+struct /* coclass */ CpSvrNew7221;
+struct /* coclass */ CpSvrNew7221S;
+struct /* coclass */ CpSvrNew7216;
+struct /* coclass */ CpSvr8114;
+struct /* coclass */ CpSvr9842;
+struct /* coclass */ CpSvr9842S;
+struct /* coclass */ CpMarketWatch;
+struct /* coclass */ CpMarketWatchS;
+struct /* coclass */ CpSvrNew7222;
+struct /* coclass */ CpSvr7748;
+struct /* coclass */ ElwAll;
+struct /* coclass */ Elw;
+struct /* coclass */ ElwUnderCur;
+struct /* coclass */ ElwInvest;
+struct /* coclass */ CpSvrNew7215A;
+struct /* coclass */ CpSvrNew7215B;
+struct /* coclass */ CpSvr7068;
+struct /* coclass */ CpSvr7063;
+struct /* coclass */ ElwJpbid;
+struct /* coclass */ ElwJpbid2;
+struct /* coclass */ CpSvr7066;
+struct /* coclass */ CpSvr7254;
+struct /* coclass */ CpSvr3744;
+struct /* coclass */ StockAdj;
+struct /* coclass */ StockUniMst;
+struct /* coclass */ StockUniCur;
+struct /* coclass */ StockUniJpBid;
+struct /* coclass */ StockUniWeek;
+struct /* coclass */ StockUniBid;
+struct /* coclass */ OptionCurOnly;
+struct /* coclass */ WorldCur;
+struct /* coclass */ MarketEye;
+struct /* coclass */ StockChart;
+struct /* coclass */ CpSvr7037;
+struct /* coclass */ K200Expect;
+struct /* coclass */ FutOptChart;
+struct /* coclass */ CpSvrNew7043;
+struct /* coclass */ CpSvrNew7212;
+struct /* coclass */ CpSvr7726;
+struct /* coclass */ CpFutOptTheoVal;
+struct /* coclass */ CpSvr7326;
+struct /* coclass */ StockOpenSb;
+struct /* coclass */ CmeMst;
+struct /* coclass */ CmeMo;
+struct /* coclass */ CmeBid;
+struct /* coclass */ CmeDaily;
+struct /* coclass */ CmeBidOnly;
+struct /* coclass */ CmeCurOnly;
+struct /* coclass */ CmeCurr;
+struct /* coclass */ FutureJpBid;
+struct /* coclass */ OptionJpBid;
+struct /* coclass */ CWList;
+struct /* coclass */ NStockMst;
+struct /* coclass */ NStockCur;
+struct /* coclass */ BondMst;
+struct /* coclass */ BondCur;
+struct /* coclass */ FOExpectCur;
+struct /* coclass */ EurexBid;
+struct /* coclass */ EurexDaily;
+struct /* coclass */ EurexCurOnly;
+struct /* coclass */ EurexMst;
+struct /* coclass */ EurexJpbid;
+struct /* coclass */ CpSvrNew7244S;
+struct /* coclass */ CpSvrNew8300;
+struct /* coclass */ CssStgList;
+struct /* coclass */ CssStgFind;
+struct /* coclass */ CssWatchStgControl;
+struct /* coclass */ CssWatchStgSubscribe;
+struct /* coclass */ CssAlert;
+struct /* coclass */ CpSvr7921;
+struct /* coclass */ CpSvr8119S;
+struct /* coclass */ CpSvr9619S;
+struct /* coclass */ CpSvr7033;
+struct /* coclass */ CpSvr7034;
+struct /* coclass */ CpSvr7236;
+struct /* coclass */ CpSvr2221;
+struct /* coclass */ CpSvr7238;
+struct /* coclass */ CpSvr7151;
+struct /* coclass */ CpSvr7240;
+struct /* coclass */ CpSvr7210d;
+struct /* coclass */ CpSvr7210T;
+struct /* coclass */ CpSvr8241;
+struct /* coclass */ CpSvr7049;
+struct /* coclass */ FutStockMst;
+struct /* coclass */ FutStockCurS;
+struct /* coclass */ FutStockWeek;
+struct /* coclass */ CpSvr9841;
+
+//
+// Smart pointer typedef declarations
+//
+
+_COM_SMARTPTR_TYPEDEF(ISysDib, __uuidof(ISysDib));
+_COM_SMARTPTR_TYPEDEF(_ISysDibEvents, __uuidof(_ISysDibEvents));
+_COM_SMARTPTR_TYPEDEF(ICpField, __uuidof(ICpField));
+_COM_SMARTPTR_TYPEDEF(ICpFields, __uuidof(ICpFields));
+_COM_SMARTPTR_TYPEDEF(ICpSys, __uuidof(ICpSys));
+
+//
+// Type library items
+//
+
+struct __declspec(uuid("8146ac72-e93b-42a8-86a3-b9851aa15229"))
+ISysDib : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetHeader))
+    _variant_t Header;
+    __declspec(property(get=GetData))
+    _variant_t Data;
+    __declspec(property(get=GetInput))
+    _variant_t Input;
+    __declspec(property(get=GetContinue))
+    long Continue;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT Request ( );
+    HRESULT Subscribe ( );
+    HRESULT Unsubscribe ( );
+    _variant_t GetHeader ( );
+    _variant_t GetData ( );
+    _variant_t GetInput ( );
+    _variant_t GetHeaderValue (
+        int __MIDL__ISysDib0000 );
+    _variant_t GetDataValue (
+        int __MIDL__ISysDib0001,
+        int __MIDL__ISysDib0002 );
+    long GetContinue ( );
+    _variant_t GetInputValue (
+        int __MIDL__ISysDib0003 );
+    HRESULT SetInputValue (
+        int __MIDL__ISysDib0004,
+        const _variant_t & newVal );
+    short GetDibStatus ( );
+    _bstr_t GetDibMsg1 ( );
+    _bstr_t GetDibMsg2 ( );
+    short BlockRequest ( );
+    HRESULT SubscribeLatest ( );
+    short BlockRequest2 (
+        short BlockOption );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_Request ( ) = 0;
+      virtual HRESULT __stdcall raw_Subscribe ( ) = 0;
+      virtual HRESULT __stdcall raw_Unsubscribe ( ) = 0;
+      virtual HRESULT __stdcall get_Header (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get_Data (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get_Input (
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetHeaderValue (
+        /*[in]*/ int __MIDL__ISysDib0000,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetDataValue (
+        /*[in]*/ int __MIDL__ISysDib0001,
+        /*[in]*/ int __MIDL__ISysDib0002,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get_Continue (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetInputValue (
+        /*[in]*/ int __MIDL__ISysDib0003,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SetInputValue (
+        /*[in]*/ int __MIDL__ISysDib0004,
+        /*[in]*/ VARIANT newVal ) = 0;
+      virtual HRESULT __stdcall raw_GetDibStatus (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetDibMsg1 (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_GetDibMsg2 (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall raw_BlockRequest (
+        /*[out,retval]*/ short * pVal ) = 0;
+      virtual HRESULT __stdcall raw_SubscribeLatest ( ) = 0;
+      virtual HRESULT __stdcall raw_BlockRequest2 (
+        /*[in]*/ short BlockOption,
+        /*[out,retval]*/ short * pVal ) = 0;
+};
+
+struct __declspec(uuid("60d7702a-57ba-4869-af3f-292fdc909d75"))
+_ISysDibEvents : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    // Methods:
+    HRESULT Received ( );
+};
+
+struct __declspec(uuid("c9fac560-be19-4fb2-801d-54f89d3fbc0a"))
+ICpField : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetName))
+    _bstr_t Name;
+    __declspec(property(get=Getfid))
+    short fid;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    _bstr_t GetName ( );
+    short Getfid ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Name (
+        /*[out,retval]*/ BSTR * pVal ) = 0;
+      virtual HRESULT __stdcall get_fid (
+        /*[out,retval]*/ short * pVal ) = 0;
+};
+
+struct __declspec(uuid("2a93e227-583d-427c-a430-2ab642c19e02"))
+ICpFields : IDispatch
+{
+    //
+    // Property data
+    //
+
+    __declspec(property(get=GetItem))
+    _variant_t Item[];
+    __declspec(property(get=GetCount))
+    long Count;
+    __declspec(property(get=Get_NewEnum))
+    IUnknownPtr _NewEnum;
+
+    //
+    // Wrapper methods for error-handling
+    //
+
+    long GetCount ( );
+    _variant_t GetItem (
+        long Index );
+    IUnknownPtr Get_NewEnum ( );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall get_Count (
+        /*[out,retval]*/ long * pVal ) = 0;
+      virtual HRESULT __stdcall get_Item (
+        /*[in]*/ long Index,
+        /*[out,retval]*/ VARIANT * pVal ) = 0;
+      virtual HRESULT __stdcall get__NewEnum (
+        /*[out,retval]*/ IUnknown * * pVal ) = 0;
+};
+
+struct __declspec(uuid("bf085d15-ace9-4e36-8e48-76bb29da5584"))
+CpField;
+    // [ default ] interface ICpField
+
+struct __declspec(uuid("43733869-291f-43b0-b2ee-8019e7363b55"))
+CpFields;
+    // [ default ] interface ICpFields
+
+struct __declspec(uuid("4be681c3-67b8-4b6a-bc98-89ff0df4238e"))
+ICpSys : IDispatch
+{
+    //
+    // Wrapper methods for error-handling
+    //
+
+    HRESULT CpUnlock (
+        long code1,
+        long code2 );
+
+    //
+    // Raw methods provided by interface
+    //
+
+      virtual HRESULT __stdcall raw_CpUnlock (
+        /*[in]*/ long code1,
+        /*[in]*/ long code2 ) = 0;
+};
+
+struct __declspec(uuid("e8931fa7-2e91-416f-85b8-f80351fd5c24"))
+CpSvrNew7224;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("af38f980-abc8-4c99-8b95-19a1cc39acb7"))
+CpSvr3745;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("ea332802-b845-4c3d-8c3a-bbf6d0b11b79"))
+CpSvr7043;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("db6cadf4-515a-4845-be7b-eca2d93dab26"))
+CpSvr8548;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("942c11d6-2da7-4119-8d4f-493f0623c1b7"))
+CpSvrNew7221;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("8a0faf47-a6a1-4518-b66a-61b7143c389c"))
+CpSvrNew7221S;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("6b0b7cb1-03bc-44cb-8768-79ffc699b41a"))
+CpSvrNew7216;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("8db220ea-04e0-4272-9aed-6b1550f6dbab"))
+CpSvr8114;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("79a10f99-442f-472d-8088-816b25f85523"))
+CpSvr9842;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("c6ce0564-b055-46aa-a406-df1af0a549c2"))
+CpSvr9842S;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("9fa37d6d-1e16-442c-8edd-a3e423e8fea1"))
+CpMarketWatch;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("d6633fd4-d339-4782-b337-2a6c9ed3ca47"))
+CpMarketWatchS;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("13173568-9547-4910-b040-9168a5dc950c"))
+CpSvrNew7222;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("af9498cb-ffbc-45fa-a5b5-3be5e48146e5"))
+CpSvr7748;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("061dcc2d-02e9-4f42-9090-3eacf821480b"))
+ElwAll;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("49ec4e41-32d5-4994-8b0c-bc7aab238e6a"))
+Elw;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("ae0bd6db-c9c5-403b-af49-7b953b362112"))
+ElwUnderCur;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("51bec419-2c7f-456f-af83-4e1e9c1f7543"))
+ElwInvest;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("4e793a3c-dfd4-499a-93f6-b2cec3dc151b"))
+CpSvrNew7215A;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("be5f7180-7e74-4f44-8c67-700811bad363"))
+CpSvrNew7215B;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("10674c56-4acc-4104-bc8d-42f855eba17d"))
+CpSvr7068;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("c8c73e26-6c02-46cb-b8b6-1600e5a86a6b"))
+CpSvr7063;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("75cca696-16f2-459d-9f73-9ee5b92d60b3"))
+ElwJpbid;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("daaf202a-393e-4353-a4ea-092733536c64"))
+ElwJpbid2;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("42a23ee1-5cb9-4f9f-8467-208ed8602665"))
+CpSvr7066;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("1b54a2e7-8f72-4825-b109-7e2dd61d6c8e"))
+CpSvr7254;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("923667a7-245e-44e2-ab39-cb224f5b913e"))
+CpSvr3744;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("ef251164-0fc9-4582-a6ee-7c6a3b981111"))
+StockAdj;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("7e291b7a-d229-4741-a8c1-c33b0dbbf6fb"))
+StockUniMst;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("dc573a7f-3301-47ce-b2f2-f36a1e5500b7"))
+StockUniCur;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("b7cc7ee7-c619-4d27-8ea9-03c2b0370ed0"))
+StockUniJpBid;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("348306a3-8692-4758-ae08-883cf96b0b4c"))
+StockUniWeek;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("1c6b4381-b00c-4529-aba1-ff705bfa342f"))
+StockUniBid;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("928a6faf-3874-42d6-bcb6-74d65f758b35"))
+OptionCurOnly;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("3d49364d-18d9-49a8-9b9f-7c5471eb129b"))
+WorldCur;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("d71f9b56-85a0-49f8-b102-19c223acf298"))
+MarketEye;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("4f5e5e9a-5bea-409f-9828-b66a70b4b51b"))
+StockChart;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("1aac83cc-fa40-485f-952f-fb5667392e4f"))
+CpSvr7037;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("39dadc73-104a-4c23-ac9b-9875b35ea194"))
+K200Expect;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("5337fa2b-b02e-42dc-a5a1-12bc4f36b6da"))
+FutOptChart;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("bc2b7c0d-8481-4067-b1a4-5d7bdca9dcba"))
+CpSvrNew7043;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("dc43995c-f264-4eca-b88a-20b4fd238daf"))
+CpSvrNew7212;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("23deea4c-fcf5-49b6-b1a8-07ef1d6d4ad4"))
+CpSvr7726;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("ffe900b3-d906-492b-9aa1-c9411371c108"))
+CpFutOptTheoVal;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("d9a23d4e-624d-43e8-9fda-f9174a073209"))
+CpSvr7326;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("f1ae467a-86be-4f77-8a5c-f23d4883e3a7"))
+StockOpenSb;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("9b08d6be-4de0-4f6a-b32a-22c9f0b182f7"))
+CmeMst;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("8195b34a-e25a-4174-a41e-3283bfd0cbd6"))
+CmeMo;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("e7fbcaa1-e01f-4cd5-b215-db77d3af5448"))
+CmeBid;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("09832fa6-1662-4ee3-9f91-6c8cd66eb3b2"))
+CmeDaily;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("2adc5bb3-40a2-450c-a503-51084ad15d99"))
+CmeBidOnly;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("75fdb7f9-6b05-49e7-b7bd-80da111ff3d5"))
+CmeCurOnly;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("70c14953-d33b-454b-856f-9464b7d7bab5"))
+CmeCurr;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("d14d1214-71d0-4207-9780-6dac389eae85"))
+FutureJpBid;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("6d4ec009-130a-4c74-98d2-42b020889449"))
+OptionJpBid;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("edd5de53-96d2-4f1d-ba3d-c6df75154066"))
+CWList;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("d3825ee2-c49f-4756-890d-530cdaa25ec5"))
+NStockMst;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("3014c34b-46c3-4440-b6f5-93997817047b"))
+NStockCur;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("a0b46fa8-216d-47eb-a5dc-c500acceea1a"))
+BondMst;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("3618d98b-be61-4a46-9a2b-c6b38ecd2a09"))
+BondCur;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("55d92823-f6cd-49fc-a3a8-9b4fae025175"))
+FOExpectCur;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("a45c67c3-53b6-4740-92af-a04338d9215b"))
+EurexBid;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("a0696f58-8c6b-4e3b-8f7b-9eb4cc094ebb"))
+EurexDaily;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("3626a621-23f1-409f-bdd0-5ae10ff924e0"))
+EurexCurOnly;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("65950801-9c94-4756-a92a-b20f319cde2e"))
+EurexMst;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("d07d7bac-7fdd-4aa1-9feb-156ec5344b8e"))
+EurexJpbid;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("5b6b6338-5843-4d9f-87bb-5c5bb40c579d"))
+CpSvrNew7244S;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("d03ab487-0553-4f48-8daa-c7a8c1549b11"))
+CpSvrNew8300;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("b9cb3a84-f66b-4fb0-a481-c9ccc8b8ae1f"))
+CssStgList;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("60e404d1-aa50-4ac9-bc86-476626cbc983"))
+CssStgFind;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("6f6615f0-da4a-4e5f-8e74-f3597f9d6865"))
+CssWatchStgControl;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("7f5af5d2-2c13-4e84-92e4-9298f1436756"))
+CssWatchStgSubscribe;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("37001e74-5faa-4502-94fa-3ae9fc102deb"))
+CssAlert;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("435ac599-969d-46a0-b119-6d7c4c7f5ab7"))
+CpSvr7921;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("02762dc2-93fa-48ca-897c-dae7d68514ab"))
+CpSvr8119S;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("772812d7-6f16-41c5-9e4a-95955f9203dc"))
+CpSvr9619S;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("ef88bbdc-8403-41c7-9fa1-2e0b5d52feb4"))
+CpSvr7033;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("aafd418d-0d1a-41c1-9e70-e91962002932"))
+CpSvr7034;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("100a7e1e-1b72-4622-a4cf-ffba1336a30c"))
+CpSvr7236;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("c3de1c2f-54fe-4b1e-b433-4f42a4929618"))
+CpSvr2221;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("62fbf818-c088-40c1-9b6e-d7cba632405c"))
+CpSvr7238;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("250edb54-764b-4015-979a-2b1819c8f4ba"))
+CpSvr7151;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("3438271b-2e14-4dcb-b64a-cad75b5016c5"))
+CpSvr7240;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("a92fdbce-e9f7-425d-8fb7-3accde09264f"))
+CpSvr7210d;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("249a0e5b-2fb1-4762-96de-d7d0c7927796"))
+CpSvr7210T;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("0f5b7f6f-a5b6-4296-94db-98373eee1598"))
+CpSvr8241;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("d44d2789-f23f-4e3d-959c-e6a399413492"))
+CpSvr7049;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("302903c9-49d8-4d47-9a3f-a2fa150350e7"))
+FutStockMst;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("0651a2b7-0f47-4233-acbf-ddefa06c57e9"))
+FutStockCurS;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("c8f097b8-bf52-419b-8430-084b596b4ad3"))
+FutStockWeek;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+struct __declspec(uuid("5a7eb1b7-bdb3-45e6-9caa-a75f8c534685"))
+CpSvr9841;
+    // [ default ] interface ISysDib
+    // [ default, source ] dispinterface _ISysDibEvents
+
+//
+// Wrapper method implementations
+//
+
+#include "c:\users\lgpc\visual_studio\vc_stock2\vc_stock\debug\cpsysdib.tli"
+
+} // namespace CPSYSDIBLib
+
+#pragma pack(pop)
